@@ -1,0 +1,308 @@
+@font-face {
+  font-family: Avenir-Black;
+  src: url("../Fonts/Avenir/Avenir-Black.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Book;
+  src: url("../Fonts/Avenir/Avenir-Book.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Roman;
+  src: url("../Fonts/Avenir/Avenir-Roman.ttf");
+}
+
+body {
+  background: linear-gradient(to top, #282b3b, #0c0d13);
+  min-height: 100vh;
+  width: 100vw;
+  padding-bottom: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+.container_logo_disney_principal {
+  width: 79px;
+  margin-left: 1.5rem;
+}
+
+.img_icones {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.lupa {
+  height: 1rem;
+  width: 1rem;
+}
+
+h3 {
+  color: white;
+  font-family: Avenir-Book, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.1rem;
+}
+
+.span-hover {
+  position: relative;
+  display: block;
+}
+
+.span-hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.08rem;
+  background: rgb(211, 211, 211);
+  left: 0;
+  bottom: 0;
+}
+
+.span-hover::after {
+  transform: scale(0, 1);
+  transition: transform 0.4s ease;
+  transform-origin: 0% 100%;
+  bottom: -0.5rem;
+  width: 100%;
+}
+
+.span-hover:hover::after {
+  transform: scale(1, 1);
+}
+
+.menu_container {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  padding: 0.75rem;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  display: flex;
+  gap: 2rem;
+}
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-family: Avenir-Roman sans-serif;
+}
+.img_perfil {
+  height: 48px;
+  width: 48px;
+  margin-right: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.content {
+  width: 90vw;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: relative;
+  top: 10.3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 80%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.bar {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(150, 158, 171);
+  border: 0.1px solid rgb(119, 119, 119);
+  margin: 0.5rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.bar:hover {
+  background-color: rgb(175, 184, 199);
+}
+input {
+  display: none;
+}
+
+.slides {
+  display: flex;
+  width: 1500%;
+  max-height: 368px;
+  box-shadow: #000000;
+}
+
+.slide {
+  width: 6.66666667%;
+  transition: 0.6s;
+  display: flex;
+}
+
+.slide img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+  margin-left: -6.66666667%;
+}
+#slide3:checked ~ .s1 {
+  margin-left: -13.3333333%;
+}
+#slide4:checked ~ .s1 {
+  margin-left: -20%;
+}
+#slide5:checked ~ .s1 {
+  margin-left: -26.66666667%;
+}
+#slide6:checked ~ .s1 {
+  margin-left: -33.3333333%;
+}
+#slide7:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#slide8:checked ~ .s1 {
+  margin-left: -46.66666667%;
+}
+#slide9:checked ~ .s1 {
+  margin-left: -53.3333333%;
+}
+#slide10:checked ~ .s1 {
+  margin-left: -60%;
+}
+#slide11:checked ~ .s1 {
+  margin-left: -66.66666667%;
+}
+#slide12:checked ~ .s1 {
+  margin-left: -73.3333333%;
+}
+#slide13:checked ~ .s1 {
+  margin-left: -80%;
+}
+#slide14:checked ~ .s1 {
+  margin-left: -86.66666667%;
+}
+#slide15:checked ~ .s1 {
+  margin-left: -93.3333333%;
+}
+
+.container_marcas {
+  margin-top: 3rem;
+  display: grid;
+  grid: auto / repeat(5, auto);
+  height: 110px;
+}
+.logo_filme {
+  width: 100%;
+  z-index: 1;
+}
+.box_filmes {
+  display: flex;
+  max-width: 197px;
+  height: 110px;
+  border: 1px solid rgb(70, 71, 83);
+  border-radius: 1rem;
+  transition: 1s all;
+  /*Transition*/
+  /* width: 100vw; */
+  gap: 1rem;
+  background-image: linear-gradient(rgb(48, 50, 62), rgb(30, 31, 42));
+  box-shadow: 0.1rem 1rem 1rem rgb(0, 0, 0);
+}
+
+.tag_a_divisao_filmes {
+  display: flex;
+  width: 100%;
+  height: 110px;
+  border: 1px solid rgb(70, 71, 83);
+  border-radius: 1rem;
+  transition: 1s all;
+}
+
+.box_filmes:hover {
+  transform: scale(1.03);
+}
+
+.divisao_filmes_principal {
+  display: flex;
+  width: 100vw;
+  height: 110px;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.videos_hover {
+  margin-left: -100%;
+  border: 1px solid rgb(70, 71, 83);
+  border-radius: 1rem;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+  /* display: none; here */
+  transition: 1s all;
+  height: 110px;
+}
+source {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.videos_hover video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* object-fit: cover; here */
+}
+
+.box_filmes:hover .videos_hover {
+  /* alterar a classe  */
+  display: block;
+  /* Toda vez que passar o mouse por cima deixa o video display block-size: ; */
+}
+.container_recomendados {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  width: 90vw;
+  justify-content: center;
+  margin-left: 4rem;
+}
+
+.recomendado_para_voce_titulo {
+  margin-top: 2.15rem;
+  margin-left: 4rem;
+  font-size: 18px;
+  text-transform: none;
+}
+.box_filmes_recomendados {
+}
+.recomendados_para_voce {
+  border: 0;
+  display: flex;
+}
+.img_capa_filme {
+  border-radius: 0.3rem;
+  width: 100%;
+  box-shadow: 0.1rem 1rem 1rem rgb(0, 0, 0);
+}
